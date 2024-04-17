@@ -15,8 +15,7 @@ class HomeScreen extends StatelessWidget {
     return  Directionality(
       textDirection: TextDirection.rtl,
       child: Scaffold(
-          appBar: AppBar(
-            toolbarHeight:100 ,
+          appBar: AppBar(            toolbarHeight:100 ,
             flexibleSpace:CustomAppBar(
               name: AppTexts.appName,
             ) ,
