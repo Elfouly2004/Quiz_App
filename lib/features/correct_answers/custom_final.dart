@@ -14,15 +14,18 @@ class Customfinal extends StatelessWidget {
   Widget build(BuildContext context) {
 
 
-    return Scaffold(
-      appBar: AppBar(
-        leading: Text(""),
-        toolbarHeight: MediaQuery.sizeOf(context).height * 0.130,
-        flexibleSpace: CustomAppBar(
-          name: AppTexts.check,
-        )
+    return Directionality(
+      textDirection: TextDirection.ltr,
+      child: Scaffold(
+        appBar: AppBar(
+          leading: Text(""),
+          toolbarHeight: MediaQuery.sizeOf(context).height * 0.130,
+          flexibleSpace: CustomAppBar(
+            name: AppTexts.check,
+          )
+        ),
+        body: CheckAnswersBody(questions: questions)
       ),
-      body: CheckAnswersBody(questions: questions)
     );
   }
 }

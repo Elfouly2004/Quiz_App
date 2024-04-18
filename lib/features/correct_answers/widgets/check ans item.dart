@@ -12,16 +12,20 @@ class CustomCheckAnswerItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int x=0;
-
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("${x+1})"),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("(${questions.indexOf(questionModel) + 1 }",style: TextStyle( fontSize:20),),
+        ),
 
         SizedBox(height: 10,),
 
-        Text(questionModel.title,style: TextStyle(fontSize: 20),),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(questionModel.title,style: TextStyle(fontSize: 20),),
+        ),
 
         SizedBox(height: 10,),
 
@@ -29,21 +33,24 @@ class CustomCheckAnswerItemWidget extends StatelessWidget {
 
         SizedBox(height: 10,),
 
-        Wrap(
-          children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Wrap(
+            children: [
 
-            ...questionModel.answers.map((answer) =>SizedBox(
-                width: MediaQuery.of(context).size.width/2 - 60,
-                child: Text(answer,
-                  style: TextStyle (color: questionModel.correctAnswer == answer ? Colors.green:
-                  questionModel.correctAnswer != questionModel.selectedAnswer &&
-                      questionModel.selectedAnswer == answer? Colors.red: Colors.black
-                      ,fontSize: 20
-                  ),
-                ))
-            )
+              ...questionModel.answers.map((answer) =>SizedBox(
+                  width: MediaQuery.of(context).size.width/2 - 60,
+                  child: Text(answer,
+                    style: TextStyle (color: questionModel.correctAnswer == answer ? Colors.green:
+                    questionModel.correctAnswer != questionModel.selectedAnswer &&
+                        questionModel.selectedAnswer == answer? Colors.red: Colors.black
+                        ,fontSize: 20
+                    ),
+                  ))
+              )
 
-          ],
+            ],
+          ),
         ) ,
         SizedBox(height: 10,),
 

@@ -46,18 +46,18 @@ class _CustomHomeBodyState extends State<CustomHomeBody> {
 
 
     QuestionModel(
-        correctAnswer: "12",
-        answers: ["1", "12", "5","9"],
-        title: "كم عدد شهور السنه ؟ ",
+        correctAnswer: "Salah",
+        answers: ["Messi", "Ronaldo", "Salah", "Neymar"],
+        title: "Who is your favorite player1? ",
         selectedAnswer: null
     ),
 
 
 
     QuestionModel(
-        correctAnswer: "7",
-        answers: ["1", "4", "7", "8"],
-        title: "كم عدد ايام الاسبوع؟",
+        correctAnswer: "Neymar",
+        answers: ["Messi", "Ronaldo", "Salah", "Neymar"],
+        title: "Who is your favorite player2? ",
         selectedAnswer: null
     ),
 

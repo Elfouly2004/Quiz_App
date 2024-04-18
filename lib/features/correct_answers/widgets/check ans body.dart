@@ -7,20 +7,17 @@ class CheckAnswersBody extends StatelessWidget {
   final List<QuestionModel>  questions;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(20.0),
-      child: ListView(
-        children: [
-          ...questions.map((questionModel) =>
-              CustomCheckAnswerItemWidget(
-                questions: questions,
-                questionModel: questionModel,
-              ),
-          ),
+    return ListView(
+      children: [
+        ...questions.map((questionModel) =>
+            CustomCheckAnswerItemWidget(
+              questions: questions,
+              questionModel: questionModel,
+            ),
+        ),
 
 
-        ],
-      ),
+      ],
     );
   }
 }

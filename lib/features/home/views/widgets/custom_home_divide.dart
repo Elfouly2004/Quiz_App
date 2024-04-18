@@ -10,7 +10,7 @@ class CustomHomeDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Divider(
       color: AppColors.primaryColor,
-      thickness: 2,
+      thickness: 1.5,
       indent: 0,
       endIndent: 0,
     );
