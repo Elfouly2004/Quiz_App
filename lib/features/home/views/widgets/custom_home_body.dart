@@ -38,26 +38,34 @@ class _CustomHomeBodyState extends State<CustomHomeBody> {
 
 
     QuestionModel(
-        correctAnswer: "Ronaldo",
-        answers: ["Messi", "Ronaldo", "Salah", "Neymar"],
-        title: "Who is your favorite player? ",
+        correctAnswer: "114",
+        answers: ["115سوره", "114سوره", "110سوره", "112سوره"],
+        title: "كم عدد سور القرآن الكريم؟",
         selectedAnswer: null
     ),
 
 
     QuestionModel(
-        correctAnswer: "Salah",
-        answers: ["Messi", "Ronaldo", "Salah", "Neymar"],
-        title: "Who is your favorite player1? ",
+        correctAnswer: "سيدنا بلال بن رباح",
+        answers: ["سيدنا بلال بن رباح", "عثمان بن عفان ", "علي بن ابي طالب ", "ابو بكر الصديق "],
+        title: "من هو أول مؤذن في الإسلام؟",
         selectedAnswer: null
     ),
 
 
 
     QuestionModel(
-        correctAnswer: "Neymar",
-        answers: ["Messi", "Ronaldo", "Salah", "Neymar"],
-        title: "Who is your favorite player2? ",
+        correctAnswer: " 6 سور",
+        answers: [" 6 سور", "8سور", "10سور", "2سور"],
+        title: "كم عدد سور  القرآن التي تبدأ بالمقطع ألم؟",
+        selectedAnswer: null
+    ),
+
+
+    QuestionModel(
+        correctAnswer: " 6 سور",
+        answers: [" 6236ايه", "6232ايه", "6326ايه", "6263ايه"],
+        title: "كم عدد آيات القرآن الكريم؟",
         selectedAnswer: null
     ),
 
