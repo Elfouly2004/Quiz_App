@@ -39,7 +39,7 @@ class _CustomHomeBodyState extends State<CustomHomeBody> {
 
     QuestionModel(
         correctAnswer: "114",
-        answers: ["115سوره", "114سوره", "110سوره", "112سوره"],
+        answers: ["115", "114", "112", "110"],
         title: "كم عدد سور القرآن الكريم؟",
         selectedAnswer: null
     ),
@@ -55,16 +55,16 @@ class _CustomHomeBodyState extends State<CustomHomeBody> {
 
 
     QuestionModel(
-        correctAnswer: " 6 سور",
-        answers: [" 6 سور", "8سور", "10سور", "2سور"],
+        correctAnswer: " 6 ",
+        answers: [" 6 ", "8", "10", "2"],
         title: "كم عدد سور  القرآن التي تبدأ بالمقطع ألم؟",
         selectedAnswer: null
     ),
 
 
     QuestionModel(
-        correctAnswer: " 6 سور",
-        answers: [" 6236ايه", "6232ايه", "6326ايه", "6263ايه"],
+        correctAnswer: " 6236",
+        answers: [" 6236", "6238", "6326", "6234"],
         title: "كم عدد آيات القرآن الكريم؟",
         selectedAnswer: null
     ),
